@@ -31,10 +31,10 @@ def analyze_data(data: Dict[str, Any], language: str):
     print(videos_watched)
 
     # Favorites
-    favorite_effects = get_favorite_effects(data, language)
-    favorite_hashtags = get_favorite_hashtags(data, language)
-    favorite_sounds = get_favorite_sounds(data, language)
-    favorite_videos = get_favorite_videos(data, language)
+    favorite_effects = get_favorite_effects(data)
+    favorite_hashtags = get_favorite_hashtags(data)
+    favorite_sounds = get_favorite_sounds(data)
+    favorite_videos = get_favorite_videos(data)
 
     print(translation["favorite_effects"].format(data=favorite_effects))
     print(translation["favorite_hashtags"].format(data=favorite_hashtags))
@@ -42,8 +42,8 @@ def analyze_data(data: Dict[str, Any], language: str):
     print(translation["favorite_videos"].format(data=favorite_videos))
 
     # Social
-    followers = get_followers(data, language)
-    following = get_following(data, language)
+    followers = get_followers(data)
+    following = get_following(data)
 
     print(translation["followers"].format(data=followers))
     print(translation["following"].format(data=following))

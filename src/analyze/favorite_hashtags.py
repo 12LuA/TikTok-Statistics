@@ -1,20 +1,14 @@
 import utils.infos as infos
 from typing import Dict, Any, List
-from src.translator import get_language
 
-def get_favorite_hashtags(data: Dict[str, Any], language: str) -> str:
+def get_favorite_hashtags(data: Dict[str, Any]) -> int:
     """
-    Get the favorite hashtags summary.
-    :param data: The data to analyze.
-    :param language: The language to use.
-    :return: The favorite hashtags summary.
-    """
-    try:
-        translation = get_language(language)["text_summary"]["favorite_hashtags"]
-    except KeyError:
-        raise ValueError(f"Translation for language '{language}' not found.")
+    Get the count of favorite hashtags.
 
+    :param data: The data to analyze. It should be a dictionary containing activity information.
+    :return: The count of favorite hashtags.
+    """
     favorite_hashtags_list: List[Any] = data.get("Activity", {}).get("Favorite Hashtags", {}).get("FavoriteHashtagList", [])
     favorite_hashtags_count: int = len(favorite_hashtags_list)
 
-    return translation.format(data=infos.number_with_commas(favorite_hashtags_count))
+    return favorite_hashtags_count

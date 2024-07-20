@@ -1,4 +1,4 @@
 langcodes==3.4.0
 pyfiglet==0.8.post1
 PyYAML==6.0.1
-traceback==1.0.0
+PyYAML==6.0.1
