@@ -6,6 +6,9 @@ from src.analyze.videos_commented import get_videos_commented
 from src.analyze.favorite_effects import get_favorite_effects
 from src.analyze.favorite_hashtags import get_favorite_hashtags
 from src.analyze.favorite_sounds import get_favorite_sounds
+from src.analyze.favorite_videos import get_favorite_videos
+from src.analyze.follower import get_followers
+from src.analyze.following import get_following
 
 def analyze_data(data: Dict[str, Any], language: str):
     """
@@ -31,7 +34,16 @@ def analyze_data(data: Dict[str, Any], language: str):
     favorite_effects = get_favorite_effects(data, language)
     favorite_hashtags = get_favorite_hashtags(data, language)
     favorite_sounds = get_favorite_sounds(data, language)
+    favorite_videos = get_favorite_videos(data, language)
 
     print(translation["favorite_effects"].format(data=favorite_effects))
     print(translation["favorite_hashtags"].format(data=favorite_hashtags))
     print(translation["favorite_sounds"].format(data=favorite_sounds))
+    print(translation["favorite_videos"].format(data=favorite_videos))
+
+    # Social
+    followers = get_followers(data, language)
+    following = get_following(data, language)
+
+    print(translation["followers"].format(data=followers))
+    print(translation["following"].format(data=following))
