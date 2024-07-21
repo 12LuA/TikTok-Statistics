@@ -11,5 +11,7 @@
 TikTok-Statistics analyzes and summarizes your [downloaded TikTok data](https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data).
 
 
+⚠ This project is currently still in the development phase!
+
 # Disclaimer
 TikTok-Statistics is not affiliated, associated, authorized, endorsed or in any way officially connected with TikTok or any of its subsidiaries or affiliates.
