@@ -6,7 +6,6 @@
 [![discord-shield][]][discord-invite]
 [![license-shield][]][license]
 
-<img align="right" src="https://raw.githubusercontent.com/discordlookup/discordlookup/main/.github/images/discordlookup-logo.png" height="200" width="200">
 
 # TikTok-Statistics
 TikTok-Statistics analyzes and summarizes your [downloaded TikTok data](https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data).
