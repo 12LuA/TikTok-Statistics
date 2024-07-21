@@ -15,6 +15,7 @@ from src.analyze.send_gifts import get_sended_gifts
 from src.analyze.buyed_gifts import get_buyed_gifts
 from src.analyze.interests import get_interests
 from src.analyze.blocked_users import get_blocked_users
+from src.analyze.comments import get_comments
 
 def analyze_data(data: Dict[str, Any], language: str):
     """
@@ -72,3 +73,7 @@ def analyze_data(data: Dict[str, Any], language: str):
     # Block
     blocked_users = get_blocked_users(data)
     print(translation["blocked_users"].format(data=infos.number_with_commas(blocked_users)))
+
+    # Comments
+    comments = get_comments(data)
+    print(translation["comments"].format(data=infos.number_with_commas(comments)))
