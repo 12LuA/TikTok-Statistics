@@ -15,3 +15,5 @@ TikTok-Statistics analyzes and summarizes your [downloaded TikTok data](https://
 
 # Disclaimer
 TikTok-Statistics is not affiliated, associated, authorized, endorsed or in any way officially connected with TikTok or any of its subsidiaries or affiliates.
+
+[![](https://aschey.tech/tokei/github/12LuA/TikTok-Statistics?style=for-the-badge)](https://github.com/12LuA/TikTok-Statistics)
